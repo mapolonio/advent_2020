@@ -22,7 +22,7 @@ module.exports = {
     eqeqeq: 'error',
     'func-style': ['error', 'expression', { allowArrowFunctions: true }],
     'id-blacklist': ['error', 'e'],
-    'id-length': ['error', { min: 2 }],
+    'id-length': ['error', { min: 1 }],
     'max-len': [
       'error',
       {
