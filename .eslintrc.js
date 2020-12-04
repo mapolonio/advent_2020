@@ -9,7 +9,7 @@ module.exports = {
     ecmaVersion: 9,
     sourceType: 'module',
   },
-  plugins: [],
+  plugins: ['mocha'],
   rules: {
     'array-callback-return': 'error',
     'arrow-body-style': 'off',
