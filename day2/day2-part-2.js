@@ -39,4 +39,4 @@ const main = async () => {
   console.log(validPasswords.length);
 };
 
-main();
+module.exports = { main };

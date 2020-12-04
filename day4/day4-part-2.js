@@ -124,56 +124,6 @@ const isValidPid = (pid) => {
   return /^\d{9}$/.test(pid);
 };
 
-const test1 = async () => {
-  const validPassports = await getInput('day4/valid-passports', parseInput);
-  const result = validPassports.filter(isValidPassport);
-
-  if (result.length !== validPassports.length) {
-    throw new Error('test 1 failed!');
-  }
-
-  console.log('Test 1: success');
-};
-
-const test2 = async () => {
-  const invalidPassports = await getInput('day4/invalid-passports', parseInput);
-  const result = invalidPassports.filter(isValidPassport);
-
-  if (result.length !== 0) {
-    throw new Error('test 2 failed!');
-  }
-
-  console.log('Test 2: success');
-};
-
-const test3 = () => {
-  if (
-    !isValidByr('2002') ||
-    !!isValidByr('2003') ||
-    !isValidHgt('60in') ||
-    !isValidHgt('190cm') ||
-    !!isValidHgt('190in') ||
-    !!isValidHgt('190') ||
-    !isValidHcl('#123abc') ||
-    !!isValidHcl('#123abz') ||
-    !!isValidHcl('123abc') ||
-    !isValidEcl('brn') ||
-    !!isValidEcl('wat') ||
-    !isValidPid('000000001') ||
-    !!isValidPid('0123456789')
-  ) {
-    throw new Error('test 3 failed');
-  }
-
-  console.log('Test 3: success');
-};
-
-const runTests = async () => {
-  await test1();
-  await test2();
-  test3();
-};
-
 const main = async () => {
   const passports = await getInput('day4/input', parseInput);
 
@@ -182,5 +132,17 @@ const main = async () => {
   console.log(validPassports.length);
 };
 
-main();
-// runTests();
+module.exports = {
+  main,
+  parseInput,
+  parsePassport,
+  isValidPassport,
+  isValidByr,
+  isValidIyr,
+  isValidEyr,
+  isValidYear,
+  isValidHgt,
+  isValidHcl,
+  isValidEcl,
+  isValidPid,
+};

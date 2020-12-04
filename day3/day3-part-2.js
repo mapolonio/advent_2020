@@ -51,4 +51,4 @@ const main = async () => {
   console.log(treeMultiplication);
 };
 
-main();
+module.exports = { main };

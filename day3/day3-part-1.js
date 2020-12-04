@@ -40,4 +40,4 @@ const main = async () => {
   console.log(treeQty);
 };
 
-main();
+module.exports = { main };

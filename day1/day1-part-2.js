@@ -47,4 +47,4 @@ const main = async (target = 2020) => {
   console.log(result);
 };
 
-main();
+module.exports = { main };

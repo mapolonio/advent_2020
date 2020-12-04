@@ -39,4 +39,6 @@ const main = async () => {
   console.log(validPassports.length);
 };
 
-main();
+module.exports = {
+  main,
+};
