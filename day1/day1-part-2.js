@@ -44,7 +44,7 @@ const main = async (target = 2020) => {
 
   const result = entries.reduce((acc, entry) => acc * entry, 1);
 
-  console.log(result);
+  return result;
 };
 
 module.exports = { main };

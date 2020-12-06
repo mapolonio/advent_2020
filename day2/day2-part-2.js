@@ -36,7 +36,7 @@ const main = async () => {
 
   const validPasswords = input.filter(isValidPassword);
 
-  console.log(validPasswords.length);
+  return validPasswords.length;
 };
 
 module.exports = { main };

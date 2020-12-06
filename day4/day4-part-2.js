@@ -129,7 +129,7 @@ const main = async () => {
 
   const validPassports = passports.filter(isValidPassport);
 
-  console.log(validPassports.length);
+  return validPassports.length;
 };
 
 module.exports = {

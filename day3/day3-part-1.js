@@ -37,7 +37,7 @@ const main = async () => {
 
   const treeQty = slideDown(grid, 3, 1);
 
-  console.log(treeQty);
+  return treeQty;
 };
 
 module.exports = { main };

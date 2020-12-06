@@ -40,7 +40,7 @@ const main = async () => {
   const input = await getInput('day2/input', parseInput);
   const validPasswords = input.filter(isValidPassword);
 
-  console.log(validPasswords.length);
+  return validPasswords.length;
 };
 
 module.exports = { main };

@@ -48,7 +48,7 @@ const main = async () => {
     treeMultiplication *= treeQty;
   }
 
-  console.log(treeMultiplication);
+  return treeMultiplication;
 };
 
 module.exports = { main };
