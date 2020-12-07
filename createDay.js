@@ -11,7 +11,9 @@ const run = async () => {
   const dirPath = `./day${dayNumber}`;
   const filesToCreate = [
     `${dirPath}/day${dayNumber}-part-1.js`,
+    `${dirPath}/day${dayNumber}-part-1.test.js`,
     `${dirPath}/day${dayNumber}-part-2.js`,
+    `${dirPath}/day${dayNumber}-part-2.test.js`,
     `${dirPath}/input`
   ];
 
