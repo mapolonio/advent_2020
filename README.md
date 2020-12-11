@@ -13,8 +13,15 @@ npm install
 npm start 3-1
 
 # Run in debug mode
-npm start:debug 3-1
+npm run start:debug 3-1
 
 # Run tests
 npm test
+
+# Run tests in debug mode
+npm run test:debug
 ```
+
+### Debug mode
+
+Will enable `node inspect` on port 9999
