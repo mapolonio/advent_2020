@@ -14,7 +14,8 @@ const run = async () => {
     `${dirPath}/day${dayNumber}-part-1.test.js`,
     `${dirPath}/day${dayNumber}-part-2.js`,
     `${dirPath}/day${dayNumber}-part-2.test.js`,
-    `${dirPath}/input`
+    `${dirPath}/input`,
+    `${dirPath}/test-input`
   ];
 
   await createDirectory(dirPath);
