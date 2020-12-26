@@ -80,7 +80,7 @@ const assembleTiles = (tiles, assembledTiles = []) => {
   }
 
   return assembleTiles(
-    [...tiles.slice(0, matchedIndex), ...tiles.slice(matchedIndex + 1)],
+    tiles.filter((tile, index) => index !== matchedIndex),
     assembledTiles
   );
 };
